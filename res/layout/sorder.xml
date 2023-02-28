@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="1059dp" >
+
+
+                 <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="469dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TableRow
+                        android:id="@+id/TRdoituongnhom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                          android:layout_marginLeft="0dp"
+                        android:paddingTop="3dp" >
+
+                        <TextView
+                            android:id="@+id/lblnhomkh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nhóm KH"
+                            android:textColor="#000000" />
+
+                        <Spinner
+                            android:id="@+id/cusGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="10dp" />
+
+                    </TableRow>
+                    
+                    <TableRow
+                        android:id="@+id/TRdoituong"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                          android:layout_marginLeft="0dp"
+                           android:layout_below="@+id/TRdoituongnhom"
+                        android:paddingTop="3dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Đối tượng: "
+                            android:textColor="#000000" />
+
+                        <Spinner
+                            android:id="@+id/spDoituong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="10dp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/TRnguoinhan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TRdoituong"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="90dp"
+                        android:paddingTop="10sp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Người Nhận: "
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/tvnguoinhan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/TRdiachi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TRnguoinhan"
+                        android:layout_marginRight="90dp"
+                        android:paddingTop="10sp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Địa Chỉ: "
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/tvdiachi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/txtghichu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/TRdiachi"
+                        android:paddingTop="10sp" >
+
+                        <TextView
+                            android:id="@+id/lblnote"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ghi chú" />
+
+                        <EditText
+                            android:id="@+id/txtnote"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10" >
+
+                            <requestFocus />
+                        </EditText>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/lngay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/txtghichu"
+                        android:paddingTop="10sp" >
+
+                        <TextView
+                            android:id="@+id/lblngay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ngày" />
+
+                        <TextView
+                            android:id="@+id/txtrefdate"
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="30sp"
+                            android:text="00/00/0000"
+                            android:textColor="#FF0000" />
+
+                        <Button
+                            android:id="@+id/btnchondate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chọn ngày" />
+
+                      
+                    </TableRow>
+   <TableRow
+                        android:id="@+id/sochungtu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true" 
+                        android:paddingTop="10sp" >
+                          <TextView
+                            android:id="@+id/lblso"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Số :" />
+       
+                    <TextView
+                        android:id="@+id/txtRefno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    </TableRow>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                     android:layout_width="800dp"
+                     
+                  
+                    android:layout_height="1059dp" 
+                    android:orientation="vertical" >
+
+                    <TableRow
+                        android:id="@+id/kbuthh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/lngay"
+                        android:paddingTop="10sp" >
+
+                        <Button
+                            android:id="@+id/btnchonhh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chọn HH" />
+
+                        <Button
+                            android:id="@+id/btnRefesh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Làm mới" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/lbltongtien"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/tldoituong"
+                        android:paddingTop="10sp" >
+
+                        <TextView
+                            android:id="@+id/txttongtien2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/txttongtien"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tổng tiền" />
+
+                        <TextView
+                            android:id="@+id/txthaicham"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=": " />
+
+                        <TextView
+                            android:id="@+id/txttongcong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </TableRow>
+
+                    <TableLayout
+                        android:id="@+id/tldoituong"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/kbut"
+                        android:shrinkColumns="11"
+                        android:stretchColumns="11" >
+                    </TableLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </TabHost>
+            </RelativeLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnselectcust"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnexit10"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        android:text="Chọn" />
+
+    <Button
+        android:id="@+id/btnAddNew"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnok10"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnok10"
+        android:layout_marginTop="20dp"
+        android:text="Thêm" />
+
+    <Button
+        android:id="@+id/btnok10"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnselectcust"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnselectcust"
+        android:layout_marginTop="15dp"
+        android:minWidth="48dp"
+        android:text="Ghi" />
+
+    <Button
+        android:id="@+id/btnexit10"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/scrollView1"
+        android:text="Thoát" />
+ 
+</RelativeLayout>

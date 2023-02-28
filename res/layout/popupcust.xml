@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Spinner
+            android:id="@+id/cbonhom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="66dp"
+            android:layout_toRightOf="@+id/lblnhom" />
+
+        <TextView
+            android:id="@+id/lblsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/cbonhom"
+            android:text="Tìm kiếm"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/lblsearch"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <GridView
+            android:id="@+id/Grcust"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/phone"
+            android:layout_marginTop="71dp"
+            android:numColumns="5" >
+        </GridView>
+
+        <Button
+            android:id="@+id/btnExit3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/lblsearch"
+            android:layout_below="@+id/phone"
+            android:layout_marginTop="14dp"
+            android:text="Thoát" />
+
+        <Button
+            android:id="@+id/btnsearch"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cbonhom"
+            android:layout_alignTop="@+id/btnExit3"
+            android:text="Tìm kiếm" />
+
+        <TextView
+            android:id="@+id/lblnhom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cbonhom"
+            android:layout_alignBottom="@+id/cbonhom"
+            android:layout_alignParentLeft="true"
+            android:text="Nhóm"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.97" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="437dp"
+            android:layout_weight="0.97" >
+ 
+            <TextView
+                android:id="@+id/lbldatefrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="14dp"
+                android:text="Từ Ngày" />
+
+            <TextView
+                android:id="@+id/txtdate1"
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/lbldatefrom"
+                android:layout_alignBottom="@+id/lbldatefrom"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/lbldatefrom"
+                android:paddingRight="30sp"
+                android:text="00/00/0000"
+                android:textColor="#FF0000" />
+
+            <Button
+                android:id="@+id/btndate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/txtdate1"
+                android:text="Chọn Ngày" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btndate1"
+                android:layout_marginTop="17dp"
+                android:paddingRight="10sp"
+                android:text="Đến ngày" />
+
+            <TextView
+                android:id="@+id/txtrefdate"
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_toLeftOf="@+id/btndate1"
+                android:paddingRight="30sp"
+                android:text="00/00/0000"
+                android:textColor="#FF0000" />
+
+            <Button
+                android:id="@+id/btnchondate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtrefdate"
+                android:layout_alignBottom="@+id/txtrefdate"
+                android:layout_alignRight="@+id/btndate1"
+                android:text="Chọn ngày" />
+
+            <TextView
+                android:id="@+id/lblcustgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btnchondate"
+                android:layout_marginTop="27dp"
+                android:text="Nhóm khách"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/cusGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/lblcustgroup"
+                android:layout_toRightOf="@+id/lblcustgroup" />
+
+            <Spinner
+                android:id="@+id/cbochinhanh"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/cusGroup"
+                android:layout_alignRight="@+id/txtgroupid"
+                android:layout_below="@+id/cusGroup" />
+
+            <TextView
+                android:id="@+id/txtgroupid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/lblcustgroup"
+                android:layout_alignBottom="@+id/lblcustgroup"
+                android:layout_alignLeft="@+id/btnchondate"
+                android:layout_alignRight="@+id/btnchondate" />
+
+            <TextView
+                android:id="@+id/lblcontact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/cbochinhanh"
+                android:layout_alignBottom="@+id/cbochinhanh"
+                android:layout_alignParentLeft="true"
+                android:text="Chi nhánh"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/btnexit3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnrepost"
+                android:layout_alignBottom="@+id/btnrepost"
+                android:layout_alignRight="@+id/cbochinhanh"
+                android:text="Thoát" />
+
+            <Button
+                android:id="@+id/btnrepost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cbochinhanh"
+                android:layout_marginTop="24dp"
+                android:text="Báo cáo" />
+
+            <Button
+                android:id="@+id/btncreatedoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnrepost"
+                android:layout_alignBottom="@+id/btnrepost"
+                android:layout_centerHorizontal="true"
+                android:text="Lập đơn" />
+
+            <Button
+                android:id="@+id/btnduyetthuchi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/btnrepost"
+                android:layout_below="@+id/btnrepost"
+                android:layout_marginTop="26dp"
+                android:text="Duyệt thu chi" />
+            
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

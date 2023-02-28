@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            
+              <RelativeLayout
+                  android:layout_width="516dp"
+                   android:layout_height="wrap_content" >
+
+ <TableRow
+     android:id="@+id/trtimkiem"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:paddingTop="1sp" >
+
+     <EditText
+         android:id="@+id/etTimkiemdoituong"
+         android:layout_width="250dp"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="20sp"
+         android:layout_marginRight="20sp"
+         android:ems="10" >
+
+         <requestFocus />
+     </EditText>
+
+     <Button
+         android:id="@+id/btnSearch"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Tìm kiếm" />
+
+     <Button
+         android:id="@+id/btnExit"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Thoát" />
+ </TableRow>
+<TableRow
+     android:id="@+id/tabselect"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+     android:layout_below="@+id/trtimkiem" 
+       android:paddingTop="1sp" >
+    <RadioButton
+        android:id="@+id/radok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đã duyệt" />
+
+    <RadioButton
+        android:id="@+id/radnotok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chưa duyệt" />
+     
+ </TableRow>
+
+ <TableLayout
+     android:id="@+id/tldoituong"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_below="@+id/tabselect"
+     android:shrinkColumns="8"
+     android:stretchColumns="8" >
+ </TableLayout>
+                  
+              </RelativeLayout>
+ 
+             </HorizontalScrollView>
+     </ScrollView>
+
+</RelativeLayout>

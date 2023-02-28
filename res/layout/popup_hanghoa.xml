@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+ <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            
+             <RelativeLayout
+                android:layout_width="519dp"
+                android:layout_height="248dp" >
+
+                <TableRow
+                    android:id="@+id/trtimkiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20sp" >
+
+                    <EditText
+                        android:id="@+id/etTimkiemdoituong"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginRight="20sp" />
+
+                    <Button
+                        android:id="@+id/btnExit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tìm kiếm" />
+                </TableRow>
+                
+                 <TableRow
+                    android:id="@+id/trsptimkiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trtimkiem"
+                    android:paddingTop="20sp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:text="Nhóm HH: " />
+
+                    <Spinner
+                        android:id="@+id/spnhomkh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp" />
+
+                </TableRow>
+                  <TableLayout
+                    android:id="@+id/tldoituong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trsptimkiem"
+                    android:shrinkColumns="6"
+                    android:stretchColumns="6" >
+                     <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trsptimkiem"
+                    android:paddingRight="1dp" >
+
+                         <GridView
+                             android:id="@+id/gritems"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:numColumns="3" >
+                         </GridView>
+                         
+                    </TableRow>
+                </TableLayout>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tldoituong"
+                    android:paddingRight="1dp" >
+
+                    <Button
+                        android:id="@+id/btnThoat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="20sp"
+                        android:text="Thoát" />
+
+                    <Button
+                        android:id="@+id/btnNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="20sp"
+                        android:text="Trước"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/btnnext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120sp"
+                        android:padding="20sp"
+                        android:text="Sau" />
+
+                </TableRow>
+                <Button
+                    android:id="@+id/btnclear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/trsptimkiem"
+                    android:layout_alignRight="@+id/trtimkiem"
+                    android:text="Nhập lại" />
+                </RelativeLayout>
+            </HorizontalScrollView>
+    </ScrollView>
+
+</RelativeLayout>

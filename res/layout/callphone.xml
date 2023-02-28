@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                      android:id="@+id/trsptimkiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trtimkiem"
+                    android:paddingTop="20sp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:text="Phone ID:" />
+
+ 				 <EditText
+ 				     android:id="@+id/phone"
+ 				     android:layout_width="wrap_content"
+ 				     android:layout_height="wrap_content"
+ 				     android:layout_alignParentTop="true"
+ 				     android:layout_marginLeft="26dp"
+ 				     android:layout_toRightOf="@+id/trsptimkiem"
+ 				     android:ems="10" >
+
+                    <requestFocus />
+                </EditText>
+                    
+                </TableRow>
+<TableRow 
+     android:id="@+id/trspbuton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trsptimkiem"
+                    android:paddingTop="20sp" >
+
+    <TextView
+        android:id="@+id/txtcach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="              " />
+
+                <Button
+                    android:id="@+id/btncall"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call" />
+  <Button
+         android:id="@+id/btnclear"
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Log Out" />
+</TableRow>
+              
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+    </ScrollView>
+
+</RelativeLayout>

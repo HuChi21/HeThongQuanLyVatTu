@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="516dp"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/trtimkiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20sp" >
+
+                    <EditText
+                        android:id="@+id/etTimkiemdoituong"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginRight="20sp" />
+
+                    <Button
+                        android:id="@+id/btnExit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tìm kiếm" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/trsptimkiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trtimkiem"
+                    android:paddingTop="20sp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:text="Nhóm KH: " />
+
+                    <Spinner
+                        android:id="@+id/spnhomkh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp" />
+
+                </TableRow>
+
+                <TableLayout
+                    android:id="@+id/tldoituong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trsptimkiem"
+                    android:shrinkColumns="6"
+                    android:stretchColumns="6" >
+                </TableLayout>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tldoituong"
+                    android:paddingRight="1dp" >
+
+                    <Button
+                        android:id="@+id/btnThoat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="20sp"
+                        android:text="Thoát" />
+
+                    <Button
+                        android:id="@+id/btnNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="20sp"
+                        android:text="Trước"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/btnnext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120sp"
+                        android:padding="20sp"
+                        android:text="Sau" />
+
+                </TableRow>
+                <!-- <TableRow -->
+                <!-- android:layout_width="800dip" -->
+                <!-- android:layout_height="300dip" -->
+                <!-- android:layout_below="@+id/trsptimkiem" > -->
+
+
+                <!-- <GridView -->
+                <!-- android:id="@+id/gvdoituong" -->
+                <!-- android:layout_width="fill_parent" -->
+                <!-- android:layout_height="fill_parent" -->
+                <!-- android:layout_alignParentLeft="true" -->
+                <!-- android:layout_marginTop="20sp" -->
+                <!-- android:background="#000000" -->
+                <!-- android:fastScrollAlwaysVisible="true" -->
+                <!-- android:fastScrollEnabled="true" -->
+                <!-- android:numColumns="6" -->
+                <!-- android:stretchMode="columnWidth" > -->
+                <!-- </GridView> -->
+                <!-- </TableRow> -->
+
+                <Button
+                    android:id="@+id/btnclear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/trsptimkiem"
+                    android:layout_alignRight="@+id/trtimkiem"
+                    android:text="Nhập lại" />
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+    </ScrollView>
+
+</RelativeLayout>

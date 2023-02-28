@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1" >
+
+ <TableRow
+     android:id="@+id/trtimkiem"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_column="0"
+     android:layout_gravity="left|top"
+     android:layout_row="0"
+     android:paddingTop="20sp" >
+
+                    <TextView
+                        android:id="@+id/lblsochungtu"
+                        android:layout_width="match_parent"
+                        android:layout_column="0"
+                        android:layout_gravity="left|top"
+                        android:layout_row="0"
+                        android:text="Chứng từ cần duyệt"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+
+   <TableRow
+                    android:id="@+id/trsptimkiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trtimkiem"
+                     android:layout_gravity="left|top"
+                    android:paddingTop="20sp" >
+
+                     <TextView
+                         android:id="@+id/txtchungtu"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="10"
+                         android:textAppearance="?android:attr/textAppearanceLarge" />
+                     
+                     </TableRow>
+       <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trsptimkiem"
+                    android:paddingRight="1dp" >
+
+                    <Button
+                        android:id="@+id/btnrefesh"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="notiButtonClicked"
+                        android:text="Refesh" />
+
+                    <Button
+                        android:id="@+id/btnthoat"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thoát" />
+
+                     <Button
+                         android:id="@+id/btnnext"
+                          style="?android:attr/buttonStyleSmall"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="120sp"
+                         android:onClick="notiButtonClicked" 
+                         android:text="Chi tiết" />
+
+                </TableRow>
+</GridLayout>

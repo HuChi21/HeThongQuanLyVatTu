@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="471dp"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/trsptimkiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trtimkiem"
+                    android:paddingTop="20sp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:text="Nhóm HH: " />
+
+                    <Spinner
+                        android:id="@+id/spnhomkh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp" />
+                </TableRow>
+
+                <TableLayout
+                    android:id="@+id/tldoituong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trsptimkiem"
+                    android:shrinkColumns="16"
+                    android:stretchColumns="16" >
+                </TableLayout>
+
+                <TableRow
+                    android:id="@+id/tabselect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tldoituong"
+                    android:paddingRight="1dp" >
+                </TableRow>
+                
+
+                <Button
+                    android:id="@+id/btnclear"
+                     style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/trsptimkiem"
+                    android:layout_toRightOf="@+id/trtimkiem"
+                    android:text="Nhập lại" />
+
+                <Button
+                    android:id="@+id/btncall"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tldoituong"
+                    android:layout_alignRight="@+id/trtimkiem"
+                    android:text="Đồng ý" />
+
+                <Button
+                    android:id="@+id/btnexit"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/btnclear"
+                    android:layout_alignRight="@+id/btnclear"
+                    android:layout_alignTop="@+id/btncall"
+                    android:text="Thoát" />
+
+                <Button
+                    android:id="@+id/btnExit2"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tabselect"
+                    android:layout_toRightOf="@+id/tabselect"
+                    android:text="Thoát" />
+
+               
+                <TableRow
+                    android:id="@+id/trtimkiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingTop="20sp" >
+
+                    <EditText
+                        android:id="@+id/etTimkiemdoituong"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginRight="20sp" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/btnExit"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tìm kiếm" />
+                </TableRow>
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+    </ScrollView>
+
+</RelativeLayout>
